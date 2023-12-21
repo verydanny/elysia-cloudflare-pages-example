@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // Typing
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "lib": [
+      "ESNext"
+    ],
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "types": [
+      "bun-types" // add Bun global
+    ],
+
+    // Module
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "target": "esnext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": false,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "moduleDetection": "force",
+
+    // Performance
+    "incremental": true,
+    "allowImportingTsExtensions": true, 
+  },
+  "include": [
+    "src",
+    "build.ts"
+  ]
+}

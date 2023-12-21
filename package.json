@@ -1,0 +1,20 @@
+{
+  "name": "elysia-cloudflare-pages-example",
+  "scripts": {
+    "build": "build.ts",
+    "deploy": "wrangler pages deploy dist -j"
+  },
+  "module": "src/server.tsx",
+  "type": "module",
+  "dependencies": {
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "wrangler": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
+}
