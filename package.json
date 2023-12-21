@@ -1,9 +1,9 @@
 {
   "name": "elysia-cloudflare-pages-example",
   "scripts": {
-    "build": "bun build.ts",
-    "dev": "wrangler pages dev dist --compatibility-date=2023-12-20",
-    "deploy": "wrangler pages deploy dist --no-bundle=true"
+    "build": "vite build",
+    "preview": "wrangler pages dev dist --compatibility-date=2023-12-20",
+    "deploy": "bun run build && wrangler pages deploy dist"
   },
   "module": "src/server.tsx",
   "exports": {
@@ -24,7 +24,8 @@
     "@typescript-eslint/parser": "^6.15.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.0"
+    "eslint-plugin-prettier": "^5.1.0",
+    "vite": "^5.0.10"
   },
   "peerDependencies": {
     "typescript": "^5.3.3"

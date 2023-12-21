@@ -3,6 +3,12 @@
 This uses bun as the runtime. [Install bun](https://bun.sh/). Elysia seems to be much faster
 than Hono, so this is an example of a small worker utilizing Hono.
 
+The build is compiled with a custom plugin to build workers.
+
+## Todo
+
+- Add Cloudflare Pages-based static content plugin
+
 ## Caveats
 
 ### AOT

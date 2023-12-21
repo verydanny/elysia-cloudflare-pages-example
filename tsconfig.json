@@ -36,7 +36,9 @@
     "allowImportingTsExtensions": true, 
   },
   "include": [
+    "plugin",
     "src",
-    "build.ts"
+    "build.ts",
+    "vite.config.ts"
   ]
 }
