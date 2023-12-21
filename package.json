@@ -2,7 +2,7 @@
   "name": "elysia-cloudflare-pages-example",
   "scripts": {
     "build": "build.ts",
-    "deploy": "wrangler pages deploy dist -j"
+    "deploy": "wrangler pages deploy dist"
   },
   "module": "src/server.tsx",
   "type": "module",
