@@ -1,8 +1,8 @@
 await Bun.build({
-  entrypoints: ['./src/server.tsx'],
+  entrypoints: ['./src/worker.tsx'],
   outdir: './dist',
   target: 'browser',
   format: 'esm',
-  minify: false,
+  minify: true,
   naming: '[dir]/_worker.js'
 })

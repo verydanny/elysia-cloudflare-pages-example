@@ -1,7 +1,7 @@
 {
   "name": "elysia-cloudflare-pages-example",
   "scripts": {
-    "build": "bun build src/server.tsx --outdir dist --entry-naming [dir]/_worker.[ext] --target browser --format esm --minify",
+    "build": "bun build.ts",
     "dev": "wrangler pages dev dist --compatibility-date=2023-12-20",
     "deploy": "wrangler pages deploy ./dist --compatibility-date=2023-12-20"
   },

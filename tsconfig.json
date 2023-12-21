@@ -10,8 +10,12 @@
     ],
     "strict": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
+    "jsxFactory": "Html.createElement",
+    "jsxFragmentFactory": "Html.Fragment",
+    "plugins": [{ "name": "@kitajs/ts-html-plugin" }],
     "types": [
+      "@cloudflare/workers-types",
       "bun-types" // add Bun global
     ],
 
