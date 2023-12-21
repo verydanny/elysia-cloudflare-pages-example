@@ -20,8 +20,8 @@
     ],
 
     // Module
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "isolatedModules": true,
     "target": "esnext",
     "esModuleInterop": true,
