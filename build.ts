@@ -3,6 +3,6 @@ await Bun.build({
   outdir: './dist',
   target: 'browser',
   format: 'esm',
-  minify: true,
+  minify: false,
   naming: '[dir]/_worker.js'
 })
