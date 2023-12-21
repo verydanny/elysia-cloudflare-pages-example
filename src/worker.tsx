@@ -1,7 +1,8 @@
 import { Elysia } from 'elysia'
 import { Html } from '@kitajs/html'
+import { users } from './controllers/users'
 
-const app = new Elysia({ aot: false })
+const app = new Elysia({ aot: false }).use(users)
 
 app.get('/', ({ set }) => {
   set.headers['Content-Type'] = 'text/html'
@@ -12,3 +13,5 @@ app.get('/', ({ set }) => {
 })
 
 export default app
+
+export type App = typeof app

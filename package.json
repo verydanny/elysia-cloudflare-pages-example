@@ -3,9 +3,12 @@
   "scripts": {
     "build": "bun build.ts",
     "dev": "wrangler pages dev dist --compatibility-date=2023-12-20",
-    "deploy": "wrangler pages deploy ./dist --compatibility-date=2023-12-20"
+    "deploy": "wrangler pages deploy dist --no-bundle=true"
   },
   "module": "src/server.tsx",
+  "exports": {
+    "workerd": "./dist/_worker.js"
+  },
   "type": "module",
   "dependencies": {
     "@kitajs/html": "^3.0.10",
