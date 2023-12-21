@@ -18,7 +18,13 @@
   "devDependencies": {
     "@cloudflare/workers-types": "latest",
     "bun-types": "latest",
-    "wrangler": "latest"
+    "wrangler": "latest",
+    "prettier": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-prettier": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.3.3"
